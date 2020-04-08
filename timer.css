@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 0.5em;
+  text-transform: uppercase;
+}
+
+li span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+
+
+/* general styling */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: -apple-system, 
+    BlinkMacSystemFont, 
+    "Segoe UI", 
+    Roboto, 
+    Oxygen-Sans, 
+    Ubuntu, 
+    Cantarell, 
+    "Helvetica Neue", 
+    sans-serif;
+}
+
+#container {
+  color: #f2df74;
+  margin: 0 auto;
+  padding: 0.5rem;
+  text-align: center;
+  vertical-align: center;
+
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  text-align: center;
+}
+
+#days{
+  color: #fff;
+  margin: 0 auto;
+  padding: 0.2rem;
+  text-align: center;
+}
+
+#hours{
+  color: #fff;
+  margin: 0 auto;
+  padding: 0.2rem;
+  text-align: center;
+}
+
+#minutes{
+  color: #fff;
+  margin: 0 auto;
+  padding: 0.2rem;
+  text-align: center;
+}
+
+#seconds{
+  color: #fff;
+  margin: 0 auto;
+  padding: 0.2rem;
+  text-align: center;
+}
+
+
