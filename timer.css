@@ -8,6 +8,11 @@ h1 {
   font-weight: normal;
 }
 
+h2 {
+  color: #fff
+  font-weight: normal;
+}
+
 li {
   display: inline-block;
   font-size: 1.5em;
@@ -57,6 +62,81 @@ body {
 
 }
 
+.header {
+    padding: 15px 15px;
+}
+
+.header__left {
+    display: none;
+}
+
+.header__left > span {
+    font-weight: 300;
+    color:#fff;
+}
+
+.header__left > span + span:before {
+    content: '|';
+    display: inline-block;
+    color:#f2df74;
+    margin: 0 40px;
+}
+
+.header__social {
+    text-align: center;
+}
+
+.header__social a {
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    font-size: 12px;
+    border-color: rgba(255, 255, 255, .5);
+}
+
+.header__social a:hover {
+    background-color: #fff;
+    color: #778;
+    border-color: #fff;
+}
+
+@media (min-width: 993px) {
+    .header {
+        padding: 20px 40px;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1201px) {
+    .header__left {
+        display: block;
+    }
+
+    .header__social {
+        text-align: right;
+    }
+}
+
+@media (min-width: 1401px) {
+    .header {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 20px 70px;
+    }
+}
+
+#intro {
+  color: #772432;
+  margin: 0 auto;
+  padding: 0.5rem;
+  text-align: center;
+  vertical-align: center;
+
+}
 .column {
   float: left;
   width: 50%;
@@ -98,4 +178,825 @@ body {
   text-align: center;
 }
 
+.social-icon {
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 3px;
+    border: 1px solid #778;
+    margin: 3px;
+}
 
+.social-icon__text {
+    margin-left: 6px;
+}
+
+.social-icon__rounded {
+    border-radius: 50%;
+}
+
+.social-icon__no-border {
+    border: 0;
+}
+
+.social-icon.si-facebook {
+    color: #f2df74;
+}
+
+.social-icon.si-facebook-bg {
+    color: #fff;
+    background-color: #3b5998;
+}
+
+.social-icon.si-facebook-bg:hover {
+    background-color: #2d4373;
+}
+
+.social-icon.si-facebook-hover:hover {
+    background-color: #3b5998;
+    border-color: #3b5998;
+    color: #fff;
+}
+
+.social-icon.si-twitter {
+    color: #00acee;
+}
+
+.social-icon.si-twitter-bg {
+    color: #fff;
+    background-color: #00acee;
+}
+
+.social-icon.si-twitter-bg:hover {
+    background-color: #0087bb;
+}
+
+.social-icon.si-twitter-hover:hover {
+    background-color: #00acee;
+    border-color: #00acee;
+    color: #fff;
+}
+
+
+.social-icon.si-youtube {
+    color: #c4302b;
+}
+
+.social-icon.si-youtube-bg {
+    color: #fff;
+    background-color: #c4302b;
+}
+
+.social-icon.si-youtube-bg:hover {
+    background-color: #9a2622;
+}
+
+.social-icon.si-youtube-hover:hover {
+    background-color: #c4302b;
+    border-color: #c4302b;
+    color: #fff;
+}
+
+.social-icon.si-yahoo {
+    color: #720e9e;
+}
+
+.social-icon.si-yahoo-bg {
+    color: #fff;
+    background-color: #720e9e;
+}
+
+.social-icon.si-yahoo-bg:hover {
+    background-color: #500a6f;
+}
+
+.social-icon.si-yahoo-hover:hover {
+    background-color: #720e9e;
+    border-color: #720e9e;
+    color: #fff;
+}
+
+.social-icon.si-google {
+    color: #dd4b39;
+}
+
+.social-icon.si-google-bg {
+    color: #fff;
+    background-color: #dd4b39;
+}
+
+.social-icon.si-google-bg:hover {
+    background-color: #c23321;
+}
+
+.social-icon.si-google-hover:hover {
+    background-color: #dd4b39;
+    border-color: #dd4b39;
+    color: #fff;
+}
+
+.social-icon.si-linkedin {
+    color: #0e76a8;
+}
+
+.social-icon.si-linkedin-bg {
+    color: #fff;
+    background-color: #0e76a8;
+}
+
+.social-icon.si-linkedin-bg:hover {
+    background-color: #0a5579;
+}
+
+.social-icon.si-linkedin-hover:hover {
+    background-color: #0e76a8;
+    border-color: #0e76a8;
+    color: #fff;
+}
+
+.social-icon.si-dribbble {
+    color: #ea4c89;
+}
+
+.social-icon.si-dribbble-bg {
+    color: #fff;
+    background-color: #ea4c89;
+}
+
+.social-icon.si-dribbble-bg:hover {
+    background-color: #e51e6b;
+}
+
+.social-icon.si-dribbble-hover:hover {
+    background-color: #ea4c89;
+    border-color: #ea4c89;
+    color: #fff;
+}
+
+.social-icon.si-delicious {
+    color: #205cc0;
+}
+
+.social-icon.si-delicious-bg {
+    color: #fff;
+    background-color: #205cc0;
+}
+
+.social-icon.si-delicious-bg:hover {
+    background-color: #194794;
+}
+
+.social-icon.si-delicious-hover:hover {
+    background-color: #205cc0;
+    border-color: #205cc0;
+    color: #fff;
+}
+
+.social-icon.si-paypal {
+    color: #00588b;
+}
+
+.social-icon.si-paypal-bg {
+    color: #fff;
+    background-color: #00588b;
+}
+
+.social-icon.si-paypal-bg:hover {
+    background-color: #003858;
+}
+
+.social-icon.si-paypal-hover:hover {
+    background-color: #00588b;
+    border-color: #00588b;
+    color: #fff;
+}
+
+.social-icon.si-android {
+    color: #a4c639;
+}
+
+.social-icon.si-android-bg {
+    color: #fff;
+    background-color: #a4c639;
+}
+
+.social-icon.si-android-bg:hover {
+    background-color: #839e2e;
+}
+
+.social-icon.si-android-hover:hover {
+    background-color: #a4c639;
+    border-color: #a4c639;
+    color: #fff;
+}
+
+.social-icon.si-foursquare {
+    color: #25a0ca;
+}
+
+.social-icon.si-foursquare-bg {
+    color: #fff;
+    background-color: #25a0ca;
+}
+
+.social-icon.si-foursquare-bg:hover {
+    background-color: #1d7e9f;
+}
+
+.social-icon.si-foursquare-hover:hover {
+    background-color: #25a0ca;
+    border-color: #25a0ca;
+    color: #fff;
+}
+
+.social-icon.si-stumbleupon {
+    color: #f74425;
+}
+
+.social-icon.si-stumbleupon-bg {
+    color: #fff;
+    background-color: #f74425;
+}
+
+.social-icon.si-stumbleupon-bg:hover {
+    background-color: #e12808;
+}
+
+.social-icon.si-stumbleupon-hover:hover {
+    background-color: #f74425;
+    border-color: #f74425;
+    color: #fff;
+}
+
+.social-icon.si-digg {
+    color: #191919;
+}
+
+.social-icon.si-digg-bg {
+    color: #fff;
+    background-color: #191919;
+}
+
+.social-icon.si-digg-bg:hover {
+    background-color: black;
+}
+
+.social-icon.si-digg-hover:hover {
+    background-color: #191919;
+    border-color: #191919;
+    color: #fff;
+}
+
+.social-icon.si-reddit {
+    color: #c6c6c6;
+}
+
+.social-icon.si-reddit-bg {
+    color: #fff;
+    background-color: #c6c6c6;
+}
+
+.social-icon.si-reddit-bg:hover {
+    background-color: #adadad;
+}
+
+.social-icon.si-reddit-hover:hover {
+    background-color: #c6c6c6;
+    border-color: #c6c6c6;
+    color: #fff;
+}
+
+.social-icon.si-spotify {
+    color: #81b71a;
+}
+
+.social-icon.si-spotify-bg {
+    color: #fff;
+    background-color: #81b71a;
+}
+
+.social-icon.si-spotify-bg:hover {
+    background-color: #628a14;
+}
+
+.social-icon.si-spotify-hover:hover {
+    background-color: #81b71a;
+    border-color: #81b71a;
+    color: #fff;
+}
+
+.social-icon.si-blogger {
+    color: #fc4f08;
+}
+
+.social-icon.si-blogger-bg {
+    color: #fff;
+    background-color: #fc4f08;
+}
+
+.social-icon.si-blogger-bg:hover {
+    background-color: #ce3e03;
+}
+
+.social-icon.si-blogger-hover:hover {
+    background-color: #fc4f08;
+    border-color: #fc4f08;
+    color: #fff;
+}
+
+.social-icon.si-cc {
+    color: #688527;
+}
+
+.social-icon.si-cc-bg {
+    color: #fff;
+    background-color: #688527;
+}
+
+.social-icon.si-cc-bg:hover {
+    background-color: #495e1b;
+}
+
+.social-icon.si-cc-hover:hover {
+    background-color: #688527;
+    border-color: #688527;
+    color: #fff;
+}
+
+.social-icon.si-evernote {
+    color: #5ba525;
+}
+
+.social-icon.si-evernote-bg {
+    color: #fff;
+    background-color: #5ba525;
+}
+
+.social-icon.si-evernote-bg:hover {
+    background-color: #447b1c;
+}
+
+.social-icon.si-evernote-hover:hover {
+    background-color: #5ba525;
+    border-color: #5ba525;
+    color: #fff;
+}
+
+.social-icon.si-flickr {
+    color: #ff0084;
+}
+
+.social-icon.si-flickr-bg {
+    color: #fff;
+    background-color: #ff0084;
+}
+
+.social-icon.si-flickr-bg:hover {
+    background-color: #cc006a;
+}
+
+.social-icon.si-flickr-hover:hover {
+    background-color: #ff0084;
+    border-color: #ff0084;
+    color: #fff;
+}
+
+.social-icon.si-vk {
+    color: #2b587a;
+}
+
+.social-icon.si-vk-bg {
+    color: #fff;
+    background-color: #2b587a;
+}
+
+.social-icon.si-vk-bg:hover {
+    background-color: #1e3d54;
+}
+
+.social-icon.si-vk-hover:hover {
+    background-color: #2b587a;
+    border-color: #2b587a;
+    color: #fff;
+}
+
+.social-icon.si-skype {
+    color: #00aff0;
+}
+
+.social-icon.si-skype-bg {
+    color: #fff;
+    background-color: #00aff0;
+}
+
+.social-icon.si-skype-bg:hover {
+    background-color: #008abd;
+}
+
+.social-icon.si-skype-hover:hover {
+    background-color: #00aff0;
+    border-color: #00aff0;
+    color: #fff;
+}
+
+.social-icon.si-podcast {
+    color: #e4b21b;
+}
+
+.social-icon.si-podcast-bg {
+    color: #fff;
+    background-color: #e4b21b;
+}
+
+.social-icon.si-podcast-bg:hover {
+    background-color: #b68e16;
+}
+
+.social-icon.si-podcast-hover:hover {
+    background-color: #e4b21b;
+    border-color: #e4b21b;
+    color: #fff;
+}
+
+.social-icon.si-dropbox {
+    color: #3d9ae8;
+}
+
+.social-icon.si-dropbox-bg {
+    color: #fff;
+    background-color: #3d9ae8;
+}
+
+.social-icon.si-dropbox-bg:hover {
+    background-color: #1a81d8;
+}
+
+.social-icon.si-dropbox-hover:hover {
+    background-color: #3d9ae8;
+    border-color: #3d9ae8;
+    color: #fff;
+}
+
+.social-icon.si-github {
+    color: #171515;
+}
+
+.social-icon.si-github-bg {
+    color: #fff;
+    background-color: #171515;
+}
+
+.social-icon.si-github-bg:hover {
+    background-color: black;
+}
+
+.social-icon.si-github-hover:hover {
+    background-color: #171515;
+    border-color: #171515;
+    color: #fff;
+}
+
+.social-icon.si-bitbucket {
+    color: #0e4984;
+}
+
+.social-icon.si-bitbucket-bg {
+    color: #fff;
+    background-color: #0e4984;
+}
+
+.social-icon.si-bitbucket-bg:hover {
+    background-color: #093056;
+}
+
+.social-icon.si-bitbucket-hover:hover {
+    background-color: #0e4984;
+    border-color: #0e4984;
+    color: #fff;
+}
+
+.social-icon.si-soundcloud {
+    color: #f70;
+}
+
+.social-icon.si-soundcloud-bg {
+    color: #fff;
+    background-color: #f70;
+}
+
+.social-icon.si-soundcloud-bg:hover {
+    background-color: #cc5f00;
+}
+
+.social-icon.si-soundcloud-hover:hover {
+    background-color: #f70;
+    border-color: #f70;
+    color: #fff;
+}
+
+.social-icon.si-tumblr {
+    color: #34526f;
+}
+
+.social-icon.si-tumblr-bg {
+    color: #fff;
+    background-color: #34526f;
+}
+
+.social-icon.si-tumblr-bg:hover {
+    background-color: #24384c;
+}
+
+.social-icon.si-tumblr-hover:hover {
+    background-color: #34526f;
+    border-color: #34526f;
+    color: #fff;
+}
+
+.social-icon.si-wordpress {
+    color: #1e8cbe;
+}
+
+.social-icon.si-wordpress-bg {
+    color: #fff;
+    background-color: #1e8cbe;
+}
+
+.social-icon.si-wordpress-bg:hover {
+    background-color: #176c92;
+}
+
+.social-icon.si-wordpress-hover:hover {
+    background-color: #1e8cbe;
+    border-color: #1e8cbe;
+    color: #fff;
+}
+
+.social-icon.si-drupal {
+    color: #27537a;
+}
+
+.social-icon.si-drupal-bg {
+    color: #fff;
+    background-color: #27537a;
+}
+
+.social-icon.si-drupal-bg:hover {
+    background-color: #1b3953;
+}
+
+.social-icon.si-drupal-hover:hover {
+    background-color: #27537a;
+    border-color: #27537a;
+    color: #fff;
+}
+
+.social-icon.si-yelp {
+    color: #c41200;
+}
+
+.social-icon.si-yelp-bg {
+    color: #fff;
+    background-color: #c41200;
+}
+
+.social-icon.si-yelp-bg:hover {
+    background-color: #910d00;
+}
+
+.social-icon.si-yelp-hover:hover {
+    background-color: #c41200;
+    border-color: #c41200;
+    color: #fff;
+}
+
+.social-icon.si-scribd {
+    color: #666;
+}
+
+.social-icon.si-scribd-bg {
+    color: #fff;
+    background-color: #666;
+}
+
+.social-icon.si-scribd-bg:hover {
+    background-color: #4d4d4d;
+}
+
+.social-icon.si-scribd-hover:hover {
+    background-color: #666;
+    border-color: #666;
+    color: #fff;
+}
+
+.social-icon.si-stripe {
+    color: #008cdd;
+}
+
+.social-icon.si-stripe-bg {
+    color: #fff;
+    background-color: #008cdd;
+}
+
+.social-icon.si-stripe-bg:hover {
+    background-color: #006caa;
+}
+
+.social-icon.si-stripe-hover:hover {
+    background-color: #008cdd;
+    border-color: #008cdd;
+    color: #fff;
+}
+
+.social-icon.si-print {
+    color: #111;
+}
+
+.social-icon.si-print-bg {
+    color: #fff;
+    background-color: #111;
+}
+
+.social-icon.si-print-bg:hover {
+    background-color: black;
+}
+
+.social-icon.si-print-hover:hover {
+    background-color: #111;
+    border-color: #111;
+    color: #fff;
+}
+
+.social-icon.si-acrobat {
+    color: #d3222a;
+}
+
+.social-icon.si-acrobat-bg {
+    color: #fff;
+    background-color: #d3222a;
+}
+
+.social-icon.si-acrobat-bg:hover {
+    background-color: #a71b21;
+}
+
+.social-icon.si-acrobat-hover:hover {
+    background-color: #d3222a;
+    border-color: #d3222a;
+    color: #fff;
+}
+
+.social-icon.si-stackoverflow {
+    color: #ef8236;
+}
+
+.social-icon.si-stackoverflow-bg {
+    color: #fff;
+    background-color: #ef8236;
+}
+
+.social-icon.si-stackoverflow-bg:hover {
+    background-color: #e06712;
+}
+
+.social-icon.si-stackoverflow-hover:hover {
+    background-color: #ef8236;
+    border-color: #ef8236;
+    color: #fff;
+}
+
+.social-icon.si-instagram {
+    color: #3f729b;
+}
+
+.social-icon.si-instagram-bg {
+    color: #fff;
+    background-color: #3f729b;
+}
+
+.social-icon.si-instagram-bg:hover {
+    background-color: #305777;
+}
+
+.social-icon.si-instagram-hover:hover {
+    background-color: #3f729b;
+    border-color: #3f729b;
+    color: #fff;
+}
+
+.social-icon.si-quora {
+    color: #a82400;
+}
+
+.social-icon.si-quora-bg {
+    color: #fff;
+    background-color: #a82400;
+}
+
+.social-icon.si-quora-bg:hover {
+    background-color: #751900;
+}
+
+.social-icon.si-quora-hover:hover {
+    background-color: #a82400;
+    border-color: #a82400;
+    color: #fff;
+}
+
+.social-icon.si-openid {
+    color: #e16309;
+}
+
+.social-icon.si-openid-bg {
+    color: #fff;
+    background-color: #e16309;
+}
+
+.social-icon.si-openid-bg:hover {
+    background-color: #b04d07;
+}
+
+.social-icon.si-openid-hover:hover {
+    background-color: #e16309;
+    border-color: #e16309;
+    color: #fff;
+}
+
+.social-icon.si-amazon {
+    color: #e47911;
+}
+
+.social-icon.si-amazon-bg {
+    color: #fff;
+    background-color: #e47911;
+}
+
+.social-icon.si-amazon-bg:hover {
+    background-color: #b5600d;
+}
+
+.social-icon.si-amazon-hover:hover {
+    background-color: #e47911;
+    border-color: #e47911;
+    color: #fff;
+}
+
+.social-icon.si-steam {
+    color: #111;
+}
+
+.social-icon.si-steam-bg {
+    color: #fff;
+    background-color: #111;
+}
+
+.social-icon.si-steam-bg:hover {
+    background-color: black;
+}
+
+.social-icon.si-steam-hover:hover {
+    background-color: #111;
+    border-color: #111;
+    color: #fff;
+}
+
+.social-icon.si-rss {
+    color: #ee802f;
+}
+
+.social-icon.si-rss-bg {
+    color: #fff;
+    background-color: #ee802f;
+}
+
+.social-icon.si-rss-bg:hover {
+    background-color: #d86612;
+}
+
+.social-icon.si-rss-hover:hover {
+    background-color: #ee802f;
+    border-color: #ee802f;
+    color: #fff;
+}
+
+.social-icon.si-behance {
+    color: #0057ff;
+}
+
+.social-icon.si-behance-bg {
+    color: #fff;
+    background-color: #0057ff;
+}
+
+.social-icon.si-behance-bg:hover {
+    background-color: #0046cc;
+}
+
+.social-icon.si-behance-hover:hover {
+    background-color: #0057ff;
+    border-color: #0057ff;
+    color: #fff;
+}
